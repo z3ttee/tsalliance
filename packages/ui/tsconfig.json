@@ -1,5 +1,22 @@
 {
-  "extends": "tsconfig/react-library.json",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "extends": "tsconfig/react-library",
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    ".storybook",
+    "node_modules",
+    "dist",
+    "storybook-static",
+    "src/**/*.stories.tsx",
+    "src/**/*.stories.mdx",
+    "src/**/*.stories.js",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.test.js"
+  ],
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist",
+  }
 }

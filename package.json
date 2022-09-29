@@ -4,10 +4,11 @@
   "private": true,
   "workspaces": [
     "apps/*",
+    "config/*",
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
+    "build:web": "turbo run build:web",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""

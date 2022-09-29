@@ -1,0 +1,15 @@
+{
+  "name": "tsconfig",
+  "version": "0.0.1",
+  "private": true,
+  "main": "base.json",
+  "files": [
+    "*.json"
+  ],
+  "exports": {
+    ".": "./base.json",
+    "./nextjs": "./nextjs.json",
+    "./nestjs": "./nestjs.json",
+    "./react-library": "./react-library.json"
+  }
+}
